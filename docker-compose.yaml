@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    code-server:
+        container_name: code-server-link
+        ports:
+            - 8889:3000
+        volumes:
+            - .:/app
+        image: tftwdockerhub/vscode_server_react:latest
